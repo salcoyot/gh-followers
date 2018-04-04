@@ -1,0 +1,10 @@
+
+<h3><button class="btn" ng-click="$ctrl.Back()"><<</button> {{$ctrl.login}} <div class="glyphicon glyphicon-user"></div></h3>
+
+<div ng-repeat="usuario in $ctrl.lista" >
+  <div ng-click="$ctrl.Search(usuario.login)" class="card col-md-4 col-sm-6 col-xs-1" style="width: 18rem;">
+    <div class=" col-md-12">
+      <div class="col-md-12 text">  <img class="img-circle" height="50px" ng-src={{usuario.avatar_url}} alt="Card image cap"> {{usuario.login}}</div>
+    </div>
+  </div>
+</div>
